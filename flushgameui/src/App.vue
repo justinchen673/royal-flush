@@ -1,7 +1,10 @@
 <template>
-  <topbar title="RoyalFlush"></topbar>
-  <buyin baseAmount="$100.00"></buyin>
-  <pot></pot>
+<topbar title="RoyalFlush"></topbar>
+  <body>
+    <buyin baseAmount="$100.00"></buyin>
+    <pot></pot>
+  </body>
+  
 </template>
 
 <script>
@@ -28,5 +31,23 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  }
+
+  body {
+    background: linear-gradient(-70deg, white, #D2F5F9, #A9F4FC , #81EDF9 );
+    background-size: 4000% 400%;
+    animation: gradient 15s ease infinite;
+  }
+
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
   }
 </style>
