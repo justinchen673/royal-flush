@@ -1,0 +1,60 @@
+<template>
+  <div class="side">
+    <img class="pot" src="~../assets/pot.png"/>
+    <div class="center">
+      <img class="card" src="~../assets/2_of_clubs.png"/>
+       <img class="card" src="~../assets/5_of_hearts.png"/>
+       <img class="card" src="~../assets/ace_of_spades.png"/>
+       <img class="card" src="~../assets/3_of_hearts.png"/>
+       <img class="card" src="~../assets/7_of_clubs.png"/>     
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'pot',
+  props: {
+	title: String
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+.center {
+  margin-top: 150px;
+  border-radius: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.pot {
+  max-width:15%;
+  height:auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  max-width: 10%;
+  height: auto;
+}
+
+.card:hover {
+  transition: .5s ease;
+  background-color: #008CBA;
+  opacity: 0.5;
+}
+
+.side {
+     display: flex;
+     flex-direction: column;
+}
+</style>
