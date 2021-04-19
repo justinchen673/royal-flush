@@ -1,6 +1,6 @@
 <template>
   <nav class="bar">
-    <ol>
+    <ol style="list-style-type:none">
         <li class ="Buyheader">Buy In</li>
         <li class="amount">(Pay {{ baseAmount }})</li>
     </ol>
