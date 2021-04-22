@@ -20,7 +20,8 @@ export default {
 <style scoped>
 
 .bar {
-	background: #34eb86;
+	background-color: #348ceb;
+  color: white;
 	border: 3px solid green;
 	border-radius: 50px;
   width: 27%;

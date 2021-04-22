@@ -1,23 +1,25 @@
 <template>
-<topbar title="RoyalFlush"></topbar>
+  <topbar title="RoyalFlush"></topbar>
   <body>
+    <player style="margin-top: 100px;" class="center" name="Zach"></player>
     <buyin baseAmount="$100.00"></buyin>
     <pot></pot>
   </body>
-  
 </template>
 
 <script>
 import topbar from './components/topbar.vue'
 import buyin from './components/buyin.vue'
 import pot from './components/pot.vue'
+import player from './components/player.vue'
 
 export default {
   name: 'App',
   components: {
     buyin,
     topbar,
-    pot
+    pot,
+    player
   }
 }
 </script>
@@ -34,9 +36,9 @@ export default {
   }
 
   body {
-    background: linear-gradient(-70deg, white, #D2F5F9, #A9F4FC , #81EDF9 );
-    background-size: 4000% 400%;
-    animation: gradient 15s ease infinite;
+    background: linear-gradient(-30deg, white, green, white, white);
+    background-size: 40% 40000%;
+    animation: gradient 10s ease infinite;
   }
 
   @keyframes gradient {
