@@ -1,7 +1,7 @@
 <template>
   <div class="column">
     <div class="userItem">
-      <div class="status offline">
+      <div class="status online">
       </div>
       <div class="userName">
         {{name}}
