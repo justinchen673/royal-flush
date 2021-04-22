@@ -33,12 +33,12 @@ a {
 }
 
 .topbar {
-	position: absolute;
-	background-color: #348ceb;
-	top: 0px;
-	border: 3px solid black;
-	border-radius: 10px;
-	width: 100%;
+  position: absolute;
+  background-color: #348ceb;
+  top: 0px;
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 100%;
 }
 
 .topbar:hover {
@@ -48,8 +48,8 @@ a {
 
 
 .title {
-	color: white;
-	font-family: 'Poppins', sans-serif;
+  color: white;
+  font-family: 'Poppins', sans-serif;
   font-size: 30px;
 }
 </style>
