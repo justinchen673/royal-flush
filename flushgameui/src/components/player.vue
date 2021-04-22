@@ -1,5 +1,4 @@
 <template>
-<!-- TODO: Finish this template and style it -->
   <div class="column">
     <div class="userItem">
       <div class="status offline">
@@ -37,10 +36,10 @@ export default {
 }
 
 .player {
-	background-color: gray;
+  background-color: gray;
   color: white;
-	border: 3px solid green;
-	border-radius: 1px;
+  border: 3px solid green;
+  border-radius: 1px;
   width: 10%;
   height: auto;
   margin-top: 50px;
