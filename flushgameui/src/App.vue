@@ -1,8 +1,17 @@
 <template>
   <topbar title="RoyalFlush"></topbar>
   <body>
-    <player style="margin-top: 100px;" class="center" name="Zach"></player>
-    <buyin baseAmount="$100.00"></buyin>
+    <div class="column">
+      <div class="row">
+        <buyin baseAmount="$100.00"></buyin>
+        <player class="center" name="Zach"></player>
+      </div>
+      <div class="row">
+        <player name="John" class="left"></player>
+        <player name="Dennis" class="right"></player>
+        <player name="Anon" class="bottom"></player>
+      </div>
+    </div>
     <pot></pot>
   </body>
 </template>
@@ -32,8 +41,48 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 50px;
   }
+
+  .center {
+  margin-top: 150px;
+  border-radius: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+ .left {
+  margin-top: 150px;
+  border-radius: 100px;
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+ .right {
+  margin-top: 150px;
+  border-radius: 100px;
+  position: absolute;
+  right: -25%;
+  top: 30%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+ .bottom {
+  margin-top: 150px;
+  border-radius: 100px;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 
   body {
     background: linear-gradient(-30deg, white, green, white, white);
@@ -51,5 +100,15 @@ export default {
     100% {
         background-position: 0% 50%;
     }
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
   }
 </style>

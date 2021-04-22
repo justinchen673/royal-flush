@@ -1,14 +1,14 @@
 <template>
 <!-- TODO: Finish this template and style it -->
-  <div class="container">
+  <div class="column">
     <div class="userItem">
-      <div class="status online">
+      <div class="status offline">
       </div>
       <div class="userName">
         {{name}}
       </div>
     </div>
-    <div class="center">
+    <div class="cards">
        <img class="card" src="~../assets/facedown.png"/>
        <img class="card" src="~../assets/facedown.png"/>
     </div>
@@ -26,7 +26,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.container {
+.column {
   display: flex;
   flex-direction: column;
 }
@@ -48,7 +48,7 @@ export default {
 }
 
 .card {
-  max-width: 50%;
+  max-width: 10%;
   height: auto;
 }
 
@@ -71,11 +71,10 @@ export default {
 .userItem{
     height: auto;
     padding: 10px;
+    margin: 0 auto 0 auto;
     width: 150px;
-    margin-top: 10px;
-    margin-right: 10px;
     border-radius: 1px;
-    align-items:flex-start;
+    align-items:center;
     background-color: #348ceb;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     color: #ffffff;
@@ -109,12 +108,11 @@ export default {
     width: 10px;
     min-height: 10px;
     border-radius: 50%;
-    margin-right: 10px;
     /* margin: 2px 12px 0px 10px; */
 }
 
 .userName{
-    width: 70%;
+    width: 20%;
     display: inline-block;
 }
 </style>
