@@ -1032,6 +1032,31 @@ app.get('/game/in_game.html', function(req, res) {
     }
 });
 
+app.get('/game/game.html', function(req, res) {
+    res.sendFile(__dirname + '/game/game.html');
+});
+
+app.get('/game/buyin.html', function(req, res) {
+    res.sendFile(__dirname + '/game/buyin.html');
+});
+
+app.get('/game/player.html', function(req, res) {
+    res.sendFile(__dirname + '/game/player.html');
+});
+
+app.get('/game/pot.html', function(req, res) {
+    res.sendFile(__dirname + '/game/pot.html');
+});
+
+app.get('/game/topbar.html', function(req, res) {
+    res.sendFile(__dirname + '/game/topbar.html');
+});
+
+app.get('/game/App.html', function(req, res) {
+    res.sendFile(__dirname + '/game/App.html');
+});
+
+
 app.get('/stats/personal_stats.js', function(req, res) {
     res.sendFile(__dirname + '/stats/personal_stats.js');
 });
