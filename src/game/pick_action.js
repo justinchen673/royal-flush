@@ -10,6 +10,9 @@ const App = new Vue({
     methods: {
         join() {
 			window.location.href = "in_game.html?room=" + this.inputCode;
+        },
+        gameui() {
+			window.location.href = "../flushgameui/dist/index.html";
         }
     }
 });

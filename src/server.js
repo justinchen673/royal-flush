@@ -1088,6 +1088,12 @@ app.get('/stats/global_stats.css', function(req, res) {
     res.sendFile(__dirname + '/stats/global_stats.css');
 });
 
+app.use(express.static(__dirname + '/flushgameui/dist'));
+
+app.get('/flushgameui/dist/index.html', function(req, res) {
+    res.sendFile(__dirname + '/flushgameui/dist/index.html');
+});
+
 app.get("/", (req, res) => {
     if (req.session.userName) {
         res.redirect(req.protocol + '://' + req.get('host') + '/game/pick_action.html');
