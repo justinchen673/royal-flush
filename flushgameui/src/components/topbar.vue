@@ -42,7 +42,7 @@ a {
 }
 
 .topbar:hover {
-  background-color: blue;
+  background-color: black;
   transition: ease-out 0.5s;
 }
 

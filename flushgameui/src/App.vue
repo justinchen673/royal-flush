@@ -13,6 +13,8 @@
       </div>
     </div>
     <pot></pot>
+    <commands></commands>
+    <log moves="No Moves Yet"></log>
   </body>
 </template>
 
@@ -21,6 +23,8 @@ import topbar from './components/topbar.vue'
 import buyin from './components/buyin.vue'
 import pot from './components/pot.vue'
 import player from './components/player.vue'
+import commands from './components/commands.vue'
+import log from './components/log.vue'
 
 export default {
   name: 'App',
@@ -28,7 +32,9 @@ export default {
     buyin,
     topbar,
     pot,
-    player
+    player,
+    commands,
+    log
   }
 }
 </script>

@@ -30,7 +30,7 @@ export default {
 }
 
 .bar:hover {
-  background: #138719;
+  background-color: black;
   transition: ease-out 0.5s;
 }
 
