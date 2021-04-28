@@ -15,3 +15,10 @@ Live at [royalflush.herokuapp.com](royalflush.herokuapp.com)
 5. Everytime you would like to start the server from the royal-flush directory, run the the following command:
 >`node src/server.js`
 6. Once the server is running, open up your web browser and put localhost:3000 as the URL.
+
+# How to Test Out our Game UI
+1. Navigate into our flushgameui directory  
+> `cd flushgameui`  
+2. Use NPM to launch a local instance  
+> `npm run serve`  
+3. Navigate to localhost:8080 and have fun!
