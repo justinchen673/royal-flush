@@ -421,6 +421,7 @@ app.get("/getStats", (req, res) => {
         var pre_flop_check = 0;
         var pre_flop_raise = 0;
         var pre_flop_total = 0;
+        var player_raise_amount = 0;
 
         var total_raise = 0;
         var total_actions = 0;
@@ -484,6 +485,12 @@ app.get("/getStats", (req, res) => {
 
                                     pre_flop_total += 1;
                                     total_actions += 1;
+
+                                    //calculates raise amounts
+                                    var raise_str = preflop[x].slice(2,len(preflop[x])-1);
+                                    var raise_int = parseInt(raise_str);
+                                    player_raise_amount += raise_int;
+
                                 }
                             }
 
@@ -594,6 +601,9 @@ app.get("/getStats", (req, res) => {
 
                 //raiseVsShowdown - Shows how many times raised hand goes to showdown
                 var raiseVsShowdown = Math.round((total_raise/total_sd) * 100);
+
+                //raiseAmount
+                console.log(player_raise_amount);
 
                 res.send(returnStr);
             }
