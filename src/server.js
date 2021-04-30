@@ -586,7 +586,14 @@ app.get("/getStats", (req, res) => {
                         handVal = key; 
                     }
                 }
+
                 console.log(handVal);
+
+                //raiseFreq
+                console.log(total_raise);
+
+                //raiseVsShowdown - Shows how many times raised hand goes to showdown
+                var raiseVsShowdown = Math.round((total_raise/total_sd) * 100);
 
                 res.send(returnStr);
             }
