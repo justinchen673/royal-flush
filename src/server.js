@@ -587,7 +587,8 @@ app.get("/getStats", (req, res) => {
 
 // Gets name of the logged in user
 app.get("/getName", (req, res) => {
-    res.send(req.session.userName);
+    //res.send(req.session.userName);
+    res.send("hello world");
 });
 
 // Gets id of the logged in user
